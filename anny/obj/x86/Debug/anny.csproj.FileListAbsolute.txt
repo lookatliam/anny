@@ -1,0 +1,5 @@
+M:\Liam\c#\anny\anny\bin\Debug\anny.exe
+M:\Liam\c#\anny\anny\bin\Debug\anny.pdb
+M:\Liam\c#\anny\anny\obj\x86\Debug\anny.exe
+M:\Liam\c#\anny\anny\obj\x86\Debug\anny.pdb
+M:\Liam\c#\anny\anny\obj\x86\Debug\anny.csprojResolveAssemblyReference.cache
