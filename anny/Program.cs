@@ -34,23 +34,19 @@ namespace anny
             String regPattern = @"<.*>";
 
             Match regMatches = Regex.Match(S, regPattern);
+            LinkedList<string> htmlTags = new LinkedList<string>();
             while (regMatches.Success)
             {
-                //Console.WriteLine(regMatches.Value);
-
-                String viewS = regMatches.Value;
-                String viewSRegPattern = @"[0-9]";
-
-                Match viewSRegMatches = Regex.Match(viewS, viewSRegPattern);
-
-                while (viewSRegMatches.Success)
-                {
-                    Console.WriteLine(viewSRegMatches.Value);
-                    //regMatches = viewSRegMatches.NextMatch();
-                }
-
-                regMatches = regMatches.NextMatch();
+                //htmlTags.AddFirst(regMatches.Value);
+                htmlTags.AddFirst("1");
             }
+            Console.WriteLine("while end");
+            LinkedListNode<string> htmlTagsNode;
+            for (htmlTagsNode = htmlTags.First; htmlTagsNode != null; htmlTagsNode = htmlTagsNode.Next)
+            {
+                Console.WriteLine(htmlTagsNode.Value + "\t");
+            }
+
         }
     }
 }
